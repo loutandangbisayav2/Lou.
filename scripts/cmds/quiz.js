@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "play quiz ",
     longDescription: "play a quiz based on different categories",
-    category: "fun",
+    category: "game",
     guide: {
       en: "{p}quiz category"
     }
