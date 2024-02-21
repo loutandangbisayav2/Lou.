@@ -16,7 +16,7 @@ module.exports = {
       vi: "",
       en: "Sends information about the bot and admin."
     },
-    category: "utility",
+    category: "info",
     guide: {
       en: "{pn}"
     },
