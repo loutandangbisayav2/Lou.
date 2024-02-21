@@ -10,7 +10,7 @@ module.exports = {
 		longDescription: {
 			en: 'Chat with simsimi'
 		},
-		category: 'sim',
+		category: 'fun',
 		guide: {
 			en: '   {pn} <word>: chat with simsimi'
 				+ '\n   Example:{pn} hi'
