@@ -14,7 +14,7 @@ module.exports = {
 			vi: "",
 			en: "only bot owner"
 		},
-		category: "Bot account", 
+		category: "admin", 
 		guide: {
 			en: "{pn}"
 		}
