@@ -46,15 +46,15 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n╭─────────╮\n│ 『  ${category.toUpperCase()}  』`;
+          msg += `\n╭─────────\n│ 『  ${category.toUpperCase()}  』`;
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `⊙${item}`);
+            const cmds = names.slice(i, i + 3).map((item) => `☪︎${item}`);
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
-          msg += `\n╰─────────╯`;
+          msg += `\n╰────────ꔪ`;
         }
       });
 
