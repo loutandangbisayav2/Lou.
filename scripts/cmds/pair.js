@@ -1,5 +1,4 @@
 
-
 const { loadImage, createCanvas } = require("canvas");
 const axios = require("axios");
 const fs = require("fs-extra");
@@ -7,12 +6,12 @@ const fs = require("fs-extra");
 module.exports = {
   config: {
     name: "pair",
-    countDown: 5,
-    role: 0,
+    aurthor:"xemon",
+     role: 0,
+    shortDescription: " ",
+    longDescription: "",
     category: "fun",
-    shortDescription: {
-      en: "",
-    },
+    guide: "{pn}"
   },
   onStart: async function ({ api, event, args, usersData, threadsData }) {
     let pathImg = __dirname + "/cache/background.png";
@@ -20,7 +19,7 @@ module.exports = {
     let pathAvt2 = __dirname + "/cache/Avthai.png";
 
     var id1 = event.senderID;
-    var name1 = "User1"; // Replace with function that retrieves the name of the user
+    var name1 = ""; // Replace with function that retrieves the name of the user
     var ThreadInfo = await api.getThreadInfo(event.threadID);
     var all = ThreadInfo.userInfo;
     for (let c of all) {
@@ -46,7 +45,7 @@ module.exports = {
       }
     }
     var id2 = ungvien[Math.floor(Math.random() * ungvien.length)];
-    var name2 = "User2"; // Replace with function that retrieves the name of the user
+    var name2 = "Uff ksto ramro jodi 💋"; // Replace with function that retrieves the name of the user
     var rd1 = Math.floor(Math.random() * 100) + 1;
     var cc = ["0", "-1", "99,99", "-99", "-100", "101", "0,01"];
     var rd2 = cc[Math.floor(Math.random() * cc.length)];
@@ -94,7 +93,7 @@ module.exports = {
     fs.removeSync(pathAvt2);
     return api.sendMessage(
       {
-        body: `Congratulations ${name1} successfully paired with ${name2}\nThe odds are ${tile}%`,
+        body: `🥰Successful pairing! ${name1}\💌Wish you two hundred years of happiness💕${name2}.\—The odds are ${tile}%`,
         mentions: [
           {
             tag: `${name2}`,
