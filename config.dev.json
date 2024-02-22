@@ -12,7 +12,7 @@
 	"antiInbox": false,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "[ ? ] LuBoT",
+	"nickNameBot": "[ ? ] • LuBoT",
 	"prefix": "?",
 	"adminOnly": {
 		"enable": false,
@@ -138,7 +138,7 @@
 		"logLevel": "error",
 		"selfListen": false,
 		"selfListenEvent": true,
-		"autoMarkDelivery": false,
+		"autoMarkDelivery": true,
 		"autoReconnect": false,
 		"notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
 	}
