@@ -30,8 +30,7 @@ module.exports = {
 
     const now = moment();
     const date = now.format('MMMM Do YYYY');
-    const time = now.format('h:mm:ss A');
-
+    
     const uptime = process.uptime();
     const seconds = Math.floor(uptime % 60);
     const minutes = Math.floor((uptime / 60) % 60);
@@ -52,8 +51,6 @@ message.reply(`======[𝗕𝗼𝘁 𝗶𝗻𝗳𝗼:]======
 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸: [${authorName}] ${authorFB}
 
  𝗗𝗮𝘁𝗲: ${date}
-
-𝗧𝗶𝗺𝗲: ${time}
 
 𝗨𝗽𝘁𝗶𝗺𝗲: ${uptimeString}
       
