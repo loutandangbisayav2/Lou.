@@ -17,7 +17,7 @@ module.exports = {
   },
 
   onChat: async function ({ api, event, message }) {
-    const targetUserId = "100056927749389";// add your uid
+    const targetUserId = "100095290150085";// add your uid
 
    
     if (event.senderID.toString() === targetUserId && event.type === "message_reply") {
