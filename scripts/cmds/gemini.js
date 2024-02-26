@@ -1,107 +1,37 @@
 const axios = require('axios');
-const Data = {};
 
 module.exports = {
-  config: {
-    name: "gemini",
-    aliases: ["ai", "gemi"],
-    version: 2.0,
-    author: "OtinXSandip",
-    longDescription: "Google ai ",
-    category: "ai",
-    guide: {
-      en: "{p}{n} questions",
-    },
-  },
-  onStart: async function ({ args, message, event, Reply, api }) {
-    try {
-      if (event.type === "message_reply" && event.messageReply.attachments && event.messageReply.attachments[0].type === "photo") {
-        const photoUrl = encodeURIComponent(event.messageReply.attachments[0].url);
-        const lado = args.join(" ");
-        const aalu = "otinxsandeep";
-        const url = `https://sandipapi.onrender.com/gemini2?prompt=${encodeURIComponent(lado)}&url=${photoUrl}`;
-        const response = await axios.get(url);
+		config: {
+				name: "gemini",
+				version: "1.0.0",
+        aliases: ["ai", "gemi"],
+				role: 0,
+				author: "Gemini",
+				shortDescription: "Get a response from gemini AI",
+				countDown: 5,
+				category: "ai",
+				guide: {
+						en: '{p}gemini [prompt]'
+				}
+		},
 
-        message.reply(response.data.answer);
-        return;
-      }
+		onStart: async ({ api, event, args }) => {
+				const prompt = args.join(" ");
+				api.setMessageReaction("📝", event.messageID, () => {}, true);
 
-      const prompt = args.join(' ');
-      const chat = event.senderID;
+				if (!prompt) {
+						return api.sendMessage("Hello there, how can I assist you today?", event.threadID, event.messageID);
+				}
 
-      if (prompt.toLowerCase() === "clear") {
-        delete Data[chat];
-        message.reply('Done ✅');
-        return;
-      }
+				try {
+						const response = await axios.get(`https://gemini-d1p.onrender.com/dipto?prompt=${prompt}`);
+						const di = response.data.dipto; 
+						api.setMessageReaction("✅", event.messageID, () => {}, true);
 
-      if (!Data[chat]) {
-        Data[chat] = prompt;
-      } else {
-        Data[chat] += '\n' + prompt;
-      }
-
-      const ass = "otinxsandeep";
-      const encodedPrompt = encodeURIComponent(Data[chat]);
-
-      if (!encodedPrompt) {
-        return message.reply("Please provide questions");
-      }
-
-      const response = await axios.get(`https://sandipapi.onrender.com/gemini?prompt=${encodedPrompt}`);
-      const answer = response.data.answer;
-
-      message.reply({
-        body: `${answer}
-
-You can reply for continue chatting 🫥`,
-      }, (err, info) => {
-        global.GoatBot.onReply.set(info.messageID, {
-          commandName: this.config.name,
-          messageID: info.messageID,
-          author: event.senderID
-        });
-      });
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
-  },
-  onReply: async function ({ args, message, event, Reply, api }) {
-    try {
-      const prompt = args.join(' ');
-      const chat = event.senderID;
-
-      if (prompt.toLowerCase() === "clear") {
-        delete Data[chat];
-        message.reply('Done ✅');
-        return;
-      }
-
-      if (!Data[chat]) {
-        Data[chat] = prompt;
-      } else {
-        Data[chat] += '\n' + prompt;
-      }
-
-
-      const encodedPrompt = encodeURIComponent(Data[chat]);
-
-      const response = await axios.get(`https://sandipapi.onrender.com/gemini?prompt=${encodedPrompt}`);
-      const answer = response.data.answer;
-
-      message.reply({
-        body: `${answer}
-
-you can reply for continue chatting 🫥`,
-      }, (err, info) => {
-        global.GoatBot.onReply.set(info.messageID, {
-          commandName: this.config.name,
-          messageID: info.messageID,
-          author: event.senderID
-        });
-      });
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
-  }
+						api.sendMessage(`${di}`, event.threadID, event.messageID);
+				} catch (error) {
+						console.error('ERROR', error.response?.data || error.message);
+						api.sendMessage('An error occurred while processing the command.', event.threadID);
+				}
+		}
 };
