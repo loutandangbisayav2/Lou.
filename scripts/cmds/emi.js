@@ -7,12 +7,13 @@ module.exports = {
   config: {
     name: "emi",
   	version: "1.0.0",
-  	hasPermssion: 0,
-    credits: "Deku",
-	  description: "Generate image in emi",
-  	commandCategory: "image",
+  	role: 0,
+        author: "Deku",
+        shortDescription: "Generate image in emi",
+	longDescription: "generate an image using emi cmd",
+  	category: "image",
   	usages: "[prompt]",
-  	cooldowns: 5,
+  	countDown: 5,
   },
   onStart: async function({api, event, args}){
     function r(msg){
