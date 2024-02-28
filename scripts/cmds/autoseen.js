@@ -5,6 +5,7 @@ module.exports = {
 	config: {
 	name: "autoseen",
 	version: "1.0.0",
+	aliases: ["seen"],
 	hasPermssion: 2,
 	author: "Jas",
 	shortDescription: {
