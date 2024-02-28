@@ -10,7 +10,7 @@ module.exports = {
     name: "help",
     version: "1.17",
     author: "NTKhang", // original author Kshitiz 
-    countDown: 5,
+    countDown: 10,
     role: 0,
     shortDescription: {
       en: "View command usage and list all commands directly",
