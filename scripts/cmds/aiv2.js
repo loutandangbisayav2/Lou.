@@ -3,9 +3,9 @@ const fs = require('fs');
 
 module.exports = {
 		config: {
-				name: "ai88",
+				name: "aiv2",
 				version: "1.0.0",
-        aliases: ["aiv2"],
+        aliases: ["ai2"],
 				role: 0,
 				author: "Jonell Magallanes",
 				shortDescription: "EDUCATIONAL",
