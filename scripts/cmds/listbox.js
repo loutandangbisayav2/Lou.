@@ -4,13 +4,14 @@ const request = require("request");
 
 module.exports = {
   config: {
-    name: "join",
+    name: "listbox",
     version: "2.0",
+    aliases: ["join"],
     author: "Kshitiz",
     countDown: 5,
-    role: ,
+    role: 0,
     shortDescription: "Join the group that bot is in",
-    longDescription: "",
+    longDescription: "See Current Groupchats and Join to it",
     category: "box chat",
     guide: {
       en: "{p}{n}",
@@ -33,7 +34,7 @@ module.exports = {
 
         const sentMessage = await api.sendMessage(message, event.threadID);
         global.GoatBot.onReply.set(sentMessage.messageID, {
-          commandName: 'join',
+          commandName: 'listbox',
           messageID: sentMessage.messageID,
           author: event.senderID,
         });
