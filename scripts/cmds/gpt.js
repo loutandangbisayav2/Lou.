@@ -80,8 +80,8 @@ async function kshitiz(api, event, args, message) {
 
 
 const a = {
-  name: "gpt4",
-  aliases: ["g4"],
+  name: "gpt",
+  aliases: ["gpt4", "chatgpt"],
   version: "3.0",
   author: "kshitiz",
   countDown: 5,
