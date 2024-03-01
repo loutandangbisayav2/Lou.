@@ -5,20 +5,20 @@ const axios = require("axios");
 module.exports = {
 	config: {
 		name: "pornhub",
-		Aliases: "phub",
+		Aliases: ["phub"],
 		author: "junjam",
 		version: "1.0",
 		countDown: 5,
 		role: 0,
 		shortDescription: {
-			en: "",
+			en: "edit meme phub",
 		},
 		longDescription: {
-			en: "",
+			en: "edit your comments meme in porhub comment section",
 		},
 		category: "fun",
 		guide: {
-			en: "",
+			en: "{pn} phub (yourtext)",
 		}
 	},
 	wrapText: async (ctx, text, maxWidth) => {
