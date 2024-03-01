@@ -40,7 +40,7 @@
 	"timeZone": "Asia/Ho_Chi_Minh",
 	"credentials": {
     "gmailAccount": {
-      "email": "zaironkoshanob@gmail.com",
+      "email": "kaizenji2004@gmail.com",
       "clientId": "335951889803-q0sqvpqjire12vl0c1drqpvq6trqe7qi.apps.googleusercontent.com",
       "clientSecret": "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",
       "refreshToken": "1//04vKSsirtbMjRCgYIARAAGAQSNwF-L9Ir45Y2gJy6rg7wvfCbzF5fTFQxOhV83N6jQC-N5n6S-rNnEUgujiuWu4OvrLEbmELMcSI",
@@ -66,7 +66,7 @@
 		}
 	},
 	"autoRestart": {
-		"time": 43200000,
+		"time": 36000000,
 		"notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
 	},
 	"autoUptime": {
