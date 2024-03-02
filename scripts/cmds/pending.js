@@ -2,9 +2,10 @@ module.exports = {
   config: {
     name: "pending",
     version: "1.0",
+    aliases: ["pend"],
     author: "لوفي",
     countDown: 5,
-    role: 2,
+    role: 1,
     shortDescription: {
       vi: "",
       en: ""
