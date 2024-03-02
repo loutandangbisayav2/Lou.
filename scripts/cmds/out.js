@@ -8,7 +8,7 @@ module.exports = {
 		version: "1.0",
 		author: "Sandy",
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: "bot will leave gc",
 		longDescription: "",
 		category: "admin",
@@ -25,6 +25,6 @@ module.exports = {
  } else {
  id = parseInt(args.join(" "));
  }
- return api.sendMessage('goodbye guys', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
+ return api.sendMessage('goodbye niqqas!', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
 		}
 	};
