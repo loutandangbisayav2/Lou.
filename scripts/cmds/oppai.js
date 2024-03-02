@@ -4,7 +4,7 @@ module.exports = {
 		version: "1.0",
 		author: "Kaizenji",
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: "random oppai",
 		longDescription: "sends a random anime oppai",
 		category: "18+",
