@@ -4,11 +4,11 @@ const path = require('path');
 module.exports = {
   config: {
     name: "clean",
-    aliases: [],//["c"] add aliases like that 
+    aliases: ["cl"], 
     author: "kshitiz",  
     version: "2.0",
     cooldowns: 5,
-    role: 2,
+    role: 1,
     shortDescription: {
       en: ""
     },
