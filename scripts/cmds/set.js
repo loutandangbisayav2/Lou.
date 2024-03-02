@@ -1,10 +1,10 @@
 module.exports = {
   config: {
     name: "set",
-    aliases: ['set'],
+    aliases: ["set"],
     version: "1.0",
     author: "Loid Butter",
-    role: 2,
+    role: 1,
     shortDescription: {
       en: "Set coins and experience points for a user"
     },
