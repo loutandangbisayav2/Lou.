@@ -4,10 +4,8 @@ module.exports = {
 		aliases: ["hen"],
 		version: "1.0",
 		author: "kivv",
-    
-
-		countDown: 5,
-		role: 2,
+                countDown: 5,
+		role: 1,
 		shortDescription: "developer only dear",
 		longDescription: "",
 		category: "18+",
