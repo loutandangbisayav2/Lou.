@@ -4,7 +4,7 @@ module.exports = {
 	config: {
 	name: "token",
 	version: "69",
-	hasPermission: 1,
+	role: 1,
 	author: "Xyron Chen /Template ni Jas",
 	shortDescription: {
 			en: "( 𝙂𝙚𝙩 𝙏𝙤𝙠𝙚𝙣 )"
