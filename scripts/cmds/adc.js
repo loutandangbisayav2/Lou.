@@ -1,11 +1,11 @@
 module.exports = {
 	config: {
 		name: "adc",
-		aliases: ["adc"],
+		aliases: ["bin"],
 		version: "1.2",
 		author: "Loid Butter",//Follow Loid Senpai FB https://www.facebook.com/loidofficiaI
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: {
 			vi: "",
 			en: "adc command"
