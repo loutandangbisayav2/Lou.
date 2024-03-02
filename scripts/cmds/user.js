@@ -6,7 +6,7 @@ module.exports = {
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: {
 			vi: "Quản lý người dùng",
 			en: "Manage users"
