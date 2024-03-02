@@ -4,7 +4,7 @@ module.exports = {
     version: "1.7",
     author: "xemon",
     countDown: 5,
-    role: 2,
+    role: 1,
     shortDescription: {
       vi: " ",
       en: "change bot bio ",
