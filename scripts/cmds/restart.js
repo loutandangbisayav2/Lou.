@@ -7,7 +7,7 @@ module.exports = {
 		author: "NTKhang",
 		aliases: ["res", "rest"],
 		countDown: 5,
-		role: 2,
+		role: 1,
 		shortDescription: {
 			vi: "Khởi động lại bot",
 			en: "Restart bot"
