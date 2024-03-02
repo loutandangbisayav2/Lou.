@@ -3,7 +3,7 @@ module.exports = {
     name: "delete",
     aliases: ["del"],
     author: "S",
-role: 2,
+role: 1,
     category: "system"
   },
 
