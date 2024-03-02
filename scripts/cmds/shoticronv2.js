@@ -8,7 +8,7 @@ module.exports = {
 		author: "cliff",//created by marjhun in mirai converted by cliff to goat
 		version: "2.0.0",
 		cooldowns: 0,
-		role: 2,
+		role: 1,
 		shortDescription: {
 			en: "send random video"
 		},
