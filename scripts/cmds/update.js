@@ -8,7 +8,7 @@ module.exports = {
 		name: "update",
 		version: "1.3",
 		author: "Chat GPT, NTKhang",
-		role: 2,
+		role: 1,
 		shortDescription: {
 			en: "Check for and install updates for the chatbot.",
 			vi: "Kiểm tra và cài đặt bản cập nhật cho chatbot."
