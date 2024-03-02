@@ -6,7 +6,7 @@ module.exports = {
     version: "1.0",
     author: "Rishad",
     countDown: 5,
-    role: 2,
+    role: 1,
     shortDescription: {
       en: "retrieve emails and inbox messages",
       vi: "retrieve emails and inbox messages",
