@@ -6,7 +6,7 @@ module.exports = {
   config: {
     name: "wallpaper",
     version: "1.0.0",
-    setalias: ["ws"],
+    aliases: ["ws"],
     author: "kshitiz",
     role: 0,
     countDown: 10,
