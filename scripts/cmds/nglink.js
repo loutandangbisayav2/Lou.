@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "nglink",
     author:"zed",// Convert By Goatbot Zed
-    role: 1,
+    role: 0,
     aliases: ["ngl"],
     shortDescription: "nglink",
     longDescription: "spam ngl link",
