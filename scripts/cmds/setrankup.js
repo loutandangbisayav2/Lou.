@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.1",
 		author: "NTKhang",
 		countDown: 0,
-		role: 0,
+		role: 1,
 		shortDescription: {
 			vi: "Cấu hình rankup",
 			en: "Configure rankup"
