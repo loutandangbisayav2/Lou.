@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "spam",
     aurthor:"kim/zed",// Convert By Goatbot Zed
-     role: 3,
+     role: 2,
     shortDescription: "spam msg",
     longDescription: "spam msg using bot",
     category: "admin",
