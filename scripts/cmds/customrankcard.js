@@ -10,7 +10,7 @@ module.exports = {
 		version: "1.11",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 2,
 		shortDescription: {
 			vi: "Thiết kế thẻ rank",
 			en: "Design rank card"
