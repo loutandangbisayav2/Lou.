@@ -8,7 +8,7 @@ module.exports = {
     author: "kshitiz",  
     version: "2.0",
     cooldowns: 5,
-    role: 1,
+    role: 2,
     shortDescription: {
       en: ""
     },
