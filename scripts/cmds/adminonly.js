@@ -9,7 +9,7 @@ module.exports = {
 		version: "1.4",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 2,
 		shortDescription: {
 			vi: "bật/tắt chỉ admin sử dụng bot",
 			en: "turn on/off only admin can use bot"
