@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 2,
 		shortDescription: {
 			vi: "Cấm thành viên khỏi box chat",
 			en: "Ban user from box chat"
