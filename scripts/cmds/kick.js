@@ -4,7 +4,7 @@ module.exports = {
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
-		role: 3,
+		role: 2,
 		shortDescription: {
 			vi: "Kick thành viên",
 			en: "Kick member"
