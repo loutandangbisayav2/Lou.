@@ -4,7 +4,7 @@ module.exports = {
     aliases: ["set"],
     version: "1.0",
     author: "Loid Butter",
-    role: 1,
+    role: 3,
     shortDescription: {
       en: "Set coins and experience points for a user"
     },
