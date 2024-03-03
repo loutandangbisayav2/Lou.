@@ -8,7 +8,7 @@ module.exports = {
     version: "1.0",
     author: "Kshitiz",
     countDown: 5,
-    role: 3,
+    role: 1,
     shortDescription: "Send a notification to a group chat",
     longDescription: "",
     category: "owner",
