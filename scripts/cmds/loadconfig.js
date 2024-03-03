@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 3,
 		shortDescription: {
 			vi: "Load lại config",
 			en: "Reload config"
