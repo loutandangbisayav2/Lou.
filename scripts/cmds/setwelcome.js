@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.6",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 3,
 		shortDescription: {
 			vi: "Chỉnh sửa nội dung tin nhắn chào mừng",
 			en: "Edit welcome message content"
