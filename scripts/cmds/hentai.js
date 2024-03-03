@@ -5,7 +5,7 @@ module.exports = {
 		version: "1.0",
 		author: "kivv",
                 countDown: 5,
-		role: 1,
+		role: 3,
 		shortDescription: "developer only dear",
 		longDescription: "",
 		category: "18+",
