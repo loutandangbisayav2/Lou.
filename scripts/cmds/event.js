@@ -15,7 +15,7 @@ module.exports = {
 		version: "1.8",
 		author: "NTKhang",
 		countDown: 5,
-		role: 3,
+		role: 2,
 		shortDescription: {
 			vi: "Quản lý command event",
 			en: "Manage event command"
