@@ -5,7 +5,7 @@ module.exports = {
 		aliases: ["uns"],
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 3,
 		shortDescription: {
 			vi: "Gỡ tin nhắn của bot",
 			en: "Unsend bot's message"
