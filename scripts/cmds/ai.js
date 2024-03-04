@@ -33,7 +33,7 @@ module.exports = {
       }
 
 
-      const response = await axios.get(`https://chatgpt-api.replit.app/chatgpt?prompt=${encodeURIComponent(prompt)}`);
+      const response = await axios.get(`https://aryanapis.replit.app/gpt?prompt=hello${encodeURIComponent(prompt)}`);
       const answer = response.data.answer;
 
  
