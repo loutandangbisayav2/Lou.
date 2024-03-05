@@ -3,7 +3,7 @@
     name: "autoseen",
     version: "1.0",
     author: "Samir Œ",
-    countDown: 1,
+    countDown: 0,
     role: 0,
     shortDescription: "autoseen",
     longDescription: "seen all message",
