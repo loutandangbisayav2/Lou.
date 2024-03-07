@@ -17,7 +17,7 @@ module.exports = {
 			vi: "Bật/tắt thông báo level up",
 			en: "Turn on/off level up notification"
 		},
-		category: "rank",
+		category: "owner",
 		guide: {
 			en: "{pn} [on | off]"
 		},
