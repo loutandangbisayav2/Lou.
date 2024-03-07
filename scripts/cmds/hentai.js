@@ -1,20 +1,35 @@
+const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+const vipData = fs.readFileSync(path.join(__dirname, "vip.json"), "utf8");
+const vipJson = JSON.parse(vipData);
+function isVip(senderID) {
+  return vipJson.permission.includes(senderID.toString());
+}
+
 module.exports = {
 	config: {
 		name: "hentai",
 		aliases: ["hen"],
 		version: "1.0",
-		author: "kivv",
-                countDown: 5,
-		role: 2,
-		shortDescription: "developer only dear",
-		longDescription: "",
-		category: "18+",
+		author: "Kaizenji",
+              countDown: 5,
+		role: 0,
+		shortDescription: "nhentai anime",
+		longDescription: "sends random nhentai",
+		category: "+18 VIP",
 		guide: "{pn}"
 	},
 
-	onStart: async function ({ message }) {
-	    var link = [
-   "https://i.imgur.com/mNesqCm.jpg",
+	onStart: async function ({ api, event, args, message }) {
+   
+if (!isVip(event.senderID)) {
+      api.sendMessage("You are not a VIP member, contact admin(s) to access VIP command's.", event.threadID, event.messageID);
+      return;
+    }
+
+	  var link = [
+"https://i.imgur.com/mNesqCm.jpg",
 "https://i.imgur.com/ChtMmje.jpg",
 "https://i.imgur.com/2oTwWjZ.png",
 "https://i.imgur.com/ZOcTTvR.jpg",
@@ -104,34 +119,11 @@ module.exports = {
 "https://i.imgur.com/qwRAAlu.png",
 "https://i.imgur.com/7lR2uR3.png",
 "https://i.imgur.com/vL15U0T.jpg",
-"https://i.imgur.com/jhuTb7V.png",
-"https://i.imgur.com/drfQ40t.png",
-"https://i.imgur.com/uUBPHaJ.png",
-"https://i.imgur.com/RG3okEu.jpg",
-"https://i.imgur.com/Z0TXFH4.jpg",
-"https://i.imgur.com/3m8hzJN.jpg",
-"https://i.imgur.com/RhID5od.png",
-"https://i.imgur.com/ya7YRI0.jpg",
-"https://i.imgur.com/LD3RVrr.jpg",
-"https://i.imgur.com/1w2rB4L.png",
-"https://i.imgur.com/EQL8NaV.jpg",
-"https://i.imgur.com/znt95h8.jpg",
-"https://i.imgur.com/nygmcPC.png",
-"https://i.imgur.com/HqD91sB.png",
-"https://i.imgur.com/5Dr78D4.jpg",
-"https://i.imgur.com/DdOnuos.png",
-"https://i.imgur.com/3E5zzCr.png",
-"https://i.imgur.com/CTzsGiL.png",
-"https://i.imgur.com/awlG1W2.jpg",
-"https://i.imgur.com/sAbp1dU.jpg",
-"https://i.imgur.com/GSSJLSF.png",
-"https://i.imgur.com/vDM906Y.jpg",
-"https://i.imgur.com/hCoFifQ.jpg"    
-        
+"https://i.imgur.com/jhuTb7V.png",        
 ]
 
 let img = link[Math.floor(Math.random()*link.length)]
-message.reply({body: "Here's your random hentai ❤️",
+message.reply({body: "Here's your random hentai ❤",
   attachment: await global.utils.getStreamFromURL(img)
 })
 }
