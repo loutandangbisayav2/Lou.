@@ -10,7 +10,7 @@ module.exports = {
 		version: "1.11",
 		author: "NTKhang",
 		countDown: 5,
-		role: 3,
+		role: 1,
 		shortDescription: {
 			vi: "Thiết kế thẻ rank",
 			en: "Design rank card"
@@ -19,7 +19,7 @@ module.exports = {
 			vi: "Thiết kế thẻ rank theo ý bạn",
 			en: "Design rank card by your own"
 		},
-		category: "rank",
+		category: "owner",
 		guide: {
 			vi: {
 				body: "   {pn} [maincolor | subcolor | linecolor | expbarcolor | progresscolor | alphasubcolor | textcolor | namecolor | expcolor | rankcolor | levelcolor | reset] <value>"
