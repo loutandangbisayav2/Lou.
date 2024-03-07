@@ -6,9 +6,9 @@ const tinyurl = require('tinyurl');
 
 module.exports = {
   config: {
-    name: "music",
+    name: "lyricsmusic",
     version: "1.0",
-    aliases: ["sing" , "song"],
+    aliases: ["lm"],
     author: "KShitiz",
     countDown: 5,
     role: 0,
