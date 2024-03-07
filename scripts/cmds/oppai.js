@@ -1,17 +1,32 @@
+const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+const vipData = fs.readFileSync(path.join(__dirname, "vip.json"), "utf8");
+const vipJson = JSON.parse(vipData);
+function isVip(senderID) {
+  return vipJson.permission.includes(senderID.toString());
+}
+
 module.exports = {
 	config: {
 		name: "oppai",
 		version: "1.0",
 		author: "Kaizenji",
 		countDown: 5,
-		role: 2,
+		role: 0,
 		shortDescription: "random oppai",
 		longDescription: "sends a random anime oppai",
-		category: "18+",
+		category: "18+ VIP",
 		guide: "{pn}oppai"
 	},
 
-	onStart: async function ({ message }) {
+	onStart: async function ({ api, event, args, message }) {
+   
+if (!isVip(event.senderID)) {
+      api.sendMessage("You are not a VIP member, contact admin(s) to access VIP command's.", event.threadID, event.messageID);
+      return;
+    }
+
 	 var link = [ 
      "https://i.imgur.com/Tr6tu3E.gif",
      "https://i.imgur.com/4c9EnSQ.gif",
