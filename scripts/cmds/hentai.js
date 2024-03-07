@@ -17,7 +17,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "nhentai anime",
 		longDescription: "sends random nhentai",
-		category: "+18 VIP",
+		category: "18+ VIP",
 		guide: "{pn}"
 	},
 
