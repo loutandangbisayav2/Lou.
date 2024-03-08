@@ -8,7 +8,7 @@ module.exports = {
 		author: "cliff",//created by marjhun in mirai converted by cliff to goat
 		version: "2.0.0",
 		cooldowns: 0,
-		role: 1,
+		role: 0,
 		shortDescription: {
 			en: "send random video"
 		},
@@ -122,7 +122,7 @@ const defaultInterval = 60 * 60 * 1000;
 
 const shoticron = async (api, event, threadID) => {
 	try {
-		let response = await axios.post('https://shoti-server-5b293365cb713b.replit.app/api/v1/get', { apikey: '$shoti-1hg4gifgnlfdmeslom8' });
+		let response = await axios.post('https://shoti-server-v2.onrender.com/api/v1/get', { apikey: '$shoti-1hg4gifgnlfdmeslom8' });
 		console.log('API Response:', response.data);
 
 		if (response.data.error) {
