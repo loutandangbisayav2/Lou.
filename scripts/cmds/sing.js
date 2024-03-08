@@ -74,7 +74,7 @@ module.exports = {
     role: 0,
     shortDescription: "play music from yt",
     longDescription: "play music from yt support audio recogonization.",
-    category: "music",
+    category: "media",
     guide: "{p}sing {msuicName} or reply to audio or vdo by {p}sing"
   },
   onStart: function ({ api, event, args, message }) {
