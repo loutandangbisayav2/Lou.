@@ -28,7 +28,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("📝 𝗣𝗵𝗼𝗻𝗸𝗚𝗣𝗧:\n\nHello! How can I assist you today.");
+        await message.reply("📝 𝗚𝗣𝗧:\n\nHello! How can I assist you today.");
         return;
       }
 
@@ -37,7 +37,7 @@ module.exports = {
       const answer = response.data.answer;
 
  
-    await message.reply(`📝 𝗣𝗵𝗼𝗻𝗸𝗚𝗣𝗧:\n\n${answer}`);
+    await message.reply(`📝 𝗚𝗣𝗧:\n\n${answer}`);
 
     } catch (error) {
       console.error("Error:", error.message);
