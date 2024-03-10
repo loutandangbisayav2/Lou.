@@ -14,7 +14,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["100095290150085"];
+    const permission = ["100065875311382"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("only reel kneegas can use this command!", event.threadID, event.messageID);
     }
