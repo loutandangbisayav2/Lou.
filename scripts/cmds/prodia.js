@@ -103,7 +103,7 @@ module.exports = {
   },
 
 onStart: async function ({ message, args, event, api }) {
-    const allowedSenderIDs = ["100095290150085"];
+    const allowedSenderIDs = ["100065875311382"];
     if (!allowedSenderIDs.includes(event.senderID)) {
         api.sendMessage(
             "❌ | Command 'prodia' is currently unavailable. Buy premium to use the command.",
